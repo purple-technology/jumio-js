@@ -1,0 +1,10 @@
+{
+  "jumio": {
+      "auth": {
+          "username": "4d42db13-eec1-481d-b56b-58a1306ad016",
+          "password": "Qma9xmVC8eQa66AJMX89EDVLdE8vL5bQ"
+      },
+      "apiUrl": "https://lon.netverify.com/api/netverify/v2/performNetverify",
+      "baseUrl": "https://lon.netverify.com/api/"
+  }
+}

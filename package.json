@@ -1,0 +1,53 @@
+{
+  "name": "jumio-js",
+  "version": "1.0.0",
+  "description": "Jumio NetVerify identity and document verification library",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "engineStrict" : true,
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "node src/index.js",
+    "precommit": "lint-staged",
+    "version": "",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "lint-staged": {
+    "*.js": [
+      "node_modules/.bin/prettier --single-quote --no-semi --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purple-technology/jumio-js.git"
+  },
+  "keywords": [
+    "jumio",
+    "nodejs",
+    "js",
+    "netverify",
+    "async",
+    "npm",
+    "es6"
+  ],
+  "author": "Purple Technology",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "form-data": "^2.3.3",
+    "stream-to-array": "^2.3.0"
+  },
+  "devDependencies": {
+    "lint-staged": "^4.2.3",
+    "prettier": "^1.7.4"
+  },
+  "bugs": {
+    "url": "https://github.com/purple-technology/jumio-js/issues"
+  },
+  "homepage": "https://github.com/purple-technology/jumio-js#readme"
+}
